@@ -11,7 +11,7 @@ source:
   sha256: e8384004939074eaad7d4bf0562acf54bd8603c9bc6dc8d93a87dac307272a52
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,6 +25,7 @@ requirements:
     - sphinx >3.0
     - beautifulsoup4
     - myst-parser
+    - sphinx-inline-tabs
 
 
 test:
