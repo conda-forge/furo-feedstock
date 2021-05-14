@@ -1,5 +1,5 @@
 {% set name = "furo" %}
-{% set version = "2021.2.21b25" %}
+{% set version = "2021.4.11b34" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
-  sha256: 80bc9b8d163c03ec6371850068d3098a35b69f4650a37ce66572e3581e677682
+  sha256: 3d88e2855949cecf5f562e8a28cab1a6d3355d82f3cf5796eddf9ec234e97519
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - flit-core >=2,<4
   run:
     - python >=3.6
-    - sphinx >3.0
+    - sphinx >=3,<4
     - beautifulsoup4
     - myst-parser
     - sphinx-inline-tabs
@@ -30,6 +30,10 @@ requirements:
 
 test:
   imports:
+    # One more reason to dislike type-hints
+    # This is a dirty hack because sphinx.application
+    # isn't available with a simple `import sphinx`
+    - sphinx.application
     - furo
   commands:
     - pip check
