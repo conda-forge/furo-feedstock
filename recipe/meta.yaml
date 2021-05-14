@@ -26,12 +26,14 @@ requirements:
     - beautifulsoup4
     - myst-parser
     - sphinx-inline-tabs
-    - sphinx-copybutton
-    - docutils !=0.17
 
 
 test:
   imports:
+    # One more reason to dislike type-hints
+    # This is a dirty hack because sphinx.application
+    # isn't available with a simple `import sphinx`
+    - sphinx.application
     - furo
   commands:
     - pip check
