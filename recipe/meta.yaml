@@ -22,7 +22,7 @@ requirements:
     - flit-core >=2,<4
   run:
     - python >=3.6
-    - sphinx >=3,<4
+    - sphinx >=4
     - beautifulsoup4
     - myst-parser
     - sphinx-inline-tabs
