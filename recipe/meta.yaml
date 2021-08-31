@@ -1,5 +1,5 @@
 {% set name = "furo" %}
-{% set version = "2021.8.17b43" %}
+{% set version = "2021.8.31" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
-  sha256: 2eb879a31093255a598941c0f583980952db9bc532f0e98d513349ff0f2a0742
+  sha256: 1dd84b7594d8798e6d7e7e9fb502f5407943060047e87a9c75964afeea113b4e
 
 build:
   number: 0
