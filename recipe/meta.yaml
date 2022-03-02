@@ -1,5 +1,5 @@
 {% set name = "furo" %}
-{% set version = "2021.10.9" %}
+{% set version = "2022.2.23" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
-  sha256: 2baa42a22ede3e6e95c6182ab364bac2ec15b79bc7f9ca7fb09fd9aec4b3540c
+  sha256: 005823b67f6ba00dde03e68dc78d437c72df7bcf816bcc6c111019c8faa7aa3d
 
 build:
   number: 0
@@ -17,14 +17,16 @@ build:
 
 requirements:
   host:
+    - flit-core >=2,<4
     - pip
     - python >=3.6
-    - flit-core >=2,<4
+    - sphinx-theme-builder
   run:
-    - python >=3.6
-    - sphinx >=4
     - beautifulsoup4
     - myst-parser
+    - pygments >=2.7
+    - python >=3.6
+    - sphinx >=4
     - sphinx-inline-tabs
 
 
