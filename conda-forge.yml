@@ -5,3 +5,4 @@ channels:
   sources:
     - conda-forge
     - defaults
+build_with_mambabuild: False
