@@ -1,0 +1,3 @@
+# We need defaults because we need the exact version of nodejs to build, which isn't on conda-forge
+channel_sources:
+  - conda-forge,defaults
