@@ -1,5 +1,5 @@
 {% set name = "furo" %}
-{% set version = "2022.4.7" %}
+{% set version = "2022.6.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
-  sha256: 96204ab7cd047e4b6c523996e0279c4c629a8fc31f4f109b2efd470c17f49c80
+  sha256: c927848edf3292030d0719ebdab9e16d56f1b91c68562b9be316aa5b843775ab
 
 build:
   number: 0
@@ -31,6 +31,7 @@ requirements:
     - python >=3.6
     - sphinx >=4
     - sphinx-inline-tabs
+    - sphinx-basic-ng
 
 
 test:
