@@ -23,7 +23,7 @@ requirements:
     - pip
     - python >=3.6
     - sphinx-theme-builder
-    - nodejs ==16.13.1
+    - nodejs ==16.15.1
   run:
     - beautifulsoup4
     - myst-parser
