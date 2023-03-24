@@ -1,11 +1,11 @@
-About furo
-==========
+About furo-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/furo-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pradyunsg/furo
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/furo-feedstock/blob/main/LICENSE.txt)
 
 Summary: A clean customisable Sphinx documentation theme.
 
