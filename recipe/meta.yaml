@@ -23,7 +23,7 @@ requirements:
     - pip
     - python >=3.6
     - sphinx-theme-builder
-    - nodejs ==16.15.1
+    - nodejs ==18.15.0
   run:
     - beautifulsoup4
     - myst-parser
@@ -36,7 +36,6 @@ requirements:
 
 test:
   imports:
-    # One more reason to dislike type-hints
     # This is a dirty hack because sphinx.application
     # isn't available with a simple `import sphinx`
     - sphinx.application
