@@ -1,5 +1,5 @@
 {% set name = "furo" %}
-{% set version = "2023.3.27" %}
+{% set version = "2023.5.20" %}
 
 
 package:
@@ -8,7 +8,9 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
-  sha256: b99e7867a5cc833b2b34d7230631dd6558c7a29f93071fdbb5709634bb33c5a5
+  sha256: 40e09fa17c6f4b22419d122e933089226dcdb59747b5b6c79363089827dea16f
+  patches:
+    - 0001-set-node-version-to-18.15.0.patch
 
 build:
   number: 0
@@ -23,7 +25,8 @@ requirements:
     - pip
     - python >=3.6
     - sphinx-theme-builder
-    - nodejs ==16.15.1
+    - nodeenv
+    - nodejs ==18.15.0
   run:
     - beautifulsoup4
     - myst-parser
@@ -36,7 +39,6 @@ requirements:
 
 test:
   imports:
-    # One more reason to dislike type-hints
     # This is a dirty hack because sphinx.application
     # isn't available with a simple `import sphinx`
     - sphinx.application
