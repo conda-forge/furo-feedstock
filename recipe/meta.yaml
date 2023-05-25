@@ -9,13 +9,15 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
   sha256: 40e09fa17c6f4b22419d122e933089226dcdb59747b5b6c79363089827dea16f
+  patches:
+    - 0001-set-node-version-to-18.15.0.patch
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-    #  script_env:
-    #    - STB_USE_SYSTEM_NODE=1
+  script_env:
+    - STB_USE_SYSTEM_NODE=1
 
 requirements:
   host:
