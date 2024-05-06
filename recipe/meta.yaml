@@ -1,5 +1,5 @@
 {% set name = "furo" %}
-{% set version = "2024.4.27" %}
+{% set version = "2024.5.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
-  sha256: 15a9b65269038def2cefafb86c71c6616e3969b8f07ba231f588c10c4aee6d88
+  sha256: 81f205a6605ebccbb883350432b4831c0196dd3d1bc92f61e1f459045b3d2b0b
   patches:
     - 0001-set-node-version-to-18.15.0.patch
 
