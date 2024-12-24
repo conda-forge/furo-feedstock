@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
   sha256: b63e4cee8abfc3136d3bc03a3d45a76a850bada4d6374d24c1716b0e01394a01
   patches:
     - 0001-set-node-version-to-18.15.0.patch
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
@@ -23,14 +23,14 @@ requirements:
   host:
     - flit-core >=2,<4
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - sphinx-theme-builder
     - nodeenv
     - nodejs ==18.15.0
   run:
     - beautifulsoup4
     - pygments >=2.7
-    - python >=3.7
+    - python >={{ python_min }}
     - sphinx >=6.0,<9.0
     - sphinx-basic-ng
 
@@ -45,6 +45,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pradyunsg/furo
