@@ -9,8 +9,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/furo-{{ version }}.tar.gz
   sha256: 188d1f942037d8b37cd3985b955839fea62baa1730087dc29d157677c857e2a7
-  patches:
-    - 0001-set-node-version-to-18.15.0.patch
 
 build:
   number: 0
