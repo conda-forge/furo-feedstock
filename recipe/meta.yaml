@@ -26,7 +26,7 @@ requirements:
     - python {{ python_min }}
     - sphinx-theme-builder
     - nodeenv
-    - nodejs ==18.20.0
+    - nodejs ==18.20.2
   run:
     - beautifulsoup4
     - pygments >=2.7
