@@ -16,7 +16,7 @@ index 0e4af5db..82fa9463 100644
  
  [tool.sphinx-theme-builder]
 -node-version = "18.20.5"
-+node-version = "18.20.0"
++node-version = "18.20.2"
  additional-compiled-static-assets = ["styles/furo-extensions.css"]
  
  [project]
