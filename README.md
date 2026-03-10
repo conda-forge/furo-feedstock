@@ -13,11 +13,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11477&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/furo-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -146,7 +145,4 @@ Feedstock Maintainers
 * [@asmeurer](https://github.com/asmeurer/)
 * [@cxzhong](https://github.com/cxzhong/)
 * [@gforsyth](https://github.com/gforsyth/)
-
-
-<!-- dummy commit to enable rerendering -->
 
